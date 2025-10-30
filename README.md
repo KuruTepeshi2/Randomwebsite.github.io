@@ -1,4 +1,4 @@
-# Simple CTF
+# Simple CTF tại sao nhỉ
 
 d
 sad
@@ -8,3 +8,4 @@ sadsa
 đâsdsa
 
 đásdasdasdas
+
