@@ -1,0 +1,99 @@
+body{
+    background-color: black;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.registerbox{
+    font-family: "Overpass", sans-serif;
+    font-optical-sizing: auto;
+}
+
+.box{
+    background-color: white;
+    height: 70vh;
+    width: 50vh;
+    border-radius: 40px;
+    padding: 20px;
+}
+
+.boxheader{
+    font-size: 30px;
+    text-align: center;
+}
+
+.registerform{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.registerform img{
+    height: 20vh;
+    border-radius: 100%;
+    margin-top: 1vh;   
+}
+
+.registerform input{
+    width: 35vh;
+    padding: 12px;
+    margin: 7px 0;
+    border: 2px solid black;
+    border-radius: 10px;
+    transition: 0.3s;
+    font-size: 18px;
+    font-family: "Overpass", sans-serif;
+    font-optical-sizing: auto;
+}
+
+.registerform form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;    
+}
+
+.registerform button{
+    width: 20vh;
+    padding: 10px;
+    margin-top: 15px;
+    border: none;
+    border-radius: 10px;
+    background-color: black;
+    color: white;
+    font-size: 18px;
+    cursor: pointer;
+    font-family: "Overpass", sans-serif;
+    font-optical-sizing: auto;
+}
+
+.registerform button:hover{
+    background-color: white;
+    border: 2px solid black;
+    color:black
+}
+
+.login{
+    text-align: center;
+    margin-top: 2vh;
+    font-family: "Overpass", sans-serif;
+    font-optical-sizing: auto;
+    text-decoration: none;
+}
+
+.login a{
+    color: gray;
+    text-decoration: none;
+
+}
+
+.login:hover{
+    text-decoration: underline;
+    cursor: pointer;
+    
+}
+
+.login a:hover{
+    color: black;
+}
