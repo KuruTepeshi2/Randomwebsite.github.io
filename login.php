@@ -23,7 +23,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         
         echo "<script>alert('Login successful!'); window.location.href='home.html';</script>";
     } else {
-        echo "<script>alert('Invalid username or password!'); window.location.href='login.html';</script>";
+        echo "<script>alert('nice try nigga!'); window.location.href='login.html';</script>";
     }
 }
 
