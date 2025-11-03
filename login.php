@@ -1,4 +1,6 @@
 <?php
+session_start();
+
 $servername = "localhost";
 $username = "root";
 $password = "";
@@ -20,8 +22,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $result = $conn->query($sql);
 
     if ($result->num_rows > 0) {
-        
-        echo "<script>alert('Login successful!'); window.location.href='home.html';</script>";
+         $_SESSION['user'] = $user;
+        header("Location:Home.php");
+        exit();
     } else {
         echo "<script>alert('nice try nigga!'); window.location.href='login.html';</script>";
     }
