@@ -15,8 +15,8 @@ if ($conn->connect_error) {
 $sql_create_table = "
 CREATE TABLE IF NOT EXISTS users (
     id INT AUTO_INCREMENT PRIMARY KEY,
-    username VARCHAR(50) NOT NULL,
-    password VARCHAR(100) NOT NULL,
+    username VARCHAR(50) NOT NULL UNIQUE,
+    password VARCHAR(100) NOT NULL UNIQUE,
     email VARCHAR(100) NOT NULL,
     created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
 )";
@@ -34,7 +34,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 if ($conn->query($sql_insert) === TRUE) {
     echo "<script>alert('Succesful!'); window.location.href='login.html';</script>";
 } else {
-    echo "if you see this, my web fuck up " . $conn->error;
+    echo "if you see this, my web fuck up OR USERNAME, PASSWORD IS ALREADY EXISTS" . $conn->error;
 }
 }
 
