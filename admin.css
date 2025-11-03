@@ -1,0 +1,126 @@
+body{
+    background-color: black;
+    display: flex;
+}
+
+.taskbar{
+    position: fixed;
+    background-color: white;
+    height: 7vh;
+    width:100%;
+    top: 0;
+    left: 0;
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+    z-index: 2;
+}
+
+.tbfunction {
+    display: flex;
+    gap: 6.2vw;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%)
+}
+
+.tbfunction a {
+    position: relative;
+    color: gray;
+    text-decoration: none;
+    padding: 0 0.26vw;
+    margin: 0 0.26vw;
+    font-size: 3vh;
+    font-family: "Rubik", sans-serif;
+    font-weight: 500;
+    transition: color 0.3s;
+    cursor: pointer;
+}
+
+.tbfunction a:hover {
+    color: black;
+}
+
+.tbfunction a::after {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 50%;
+    width: 0;
+    height: 2px;
+    background-color: gray;
+    transition: width 0.3s;
+    transform: translateX(-50%);
+}
+
+.tbfunction a:hover::after {
+    width: 100%; 
+}
+
+
+.tbavt{
+    position:absolute;
+    width: 5vh;
+    height: 5vh;
+    right: 0.43vw;
+    top: 50%;
+    transform: translateY(-50%)
+}
+
+.tbavt img{
+    height: 100%;
+    width: 100%;
+    object-fit:cover;
+    border-radius: 50%;
+    
+}
+
+
+.content{
+    position:relative;
+    display: flex;
+    height: 100vh;
+    left: 15.625vw;
+    width: 80vw;
+}
+.myavtar{
+    position: absolute;
+    width: 20vw;
+    height: 66vh;
+    top: 50%;
+    transform: translateY(-50%);    
+}
+
+.content img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+.aboutme {
+    font-size: 3.3vh;
+    color: white;
+    position: absolute;
+    align-content: start;
+    top: 50%;
+    transform: translateY(-59%);
+    left: 27%;
+}
+
+
+.aboutme h1{
+    font-size: 250%;
+    font-family: "Nunito Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    -style: normal;
+    
+}
+
+.aboutme p{
+    font-family: "Nunito Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    -style: normal;
+}

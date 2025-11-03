@@ -1,13 +1,10 @@
 <?php
 session_start();
-
-// Nếu chưa đăng nhập thì đá về login
 if (!isset($_SESSION['user'])) {
     header("Location: login.html");
     exit();
 }
 
-// Lấy tên người dùng ra
 $user = htmlspecialchars($_SESSION['user']);
 ?>
 <!DOCTYPE html>
@@ -21,7 +18,7 @@ $user = htmlspecialchars($_SESSION['user']);
 <body>
     <h1>Hallo and welcome, <?php echo $user; ?>!</h1>
 
-    <form action="logout.php" method="post">
+    <form>
         <button type="submit">Logout</button>
     </form>
 </body>

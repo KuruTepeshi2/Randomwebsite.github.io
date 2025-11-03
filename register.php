@@ -34,7 +34,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 if ($conn->query($sql_insert) === TRUE) {
     echo "<script>alert('Succesful!'); window.location.href='login.html';</script>";
 } else {
-    echo "error: " . $conn->error;
+    echo "if you see this, my web fuck up " . $conn->error;
 }
 }
 
