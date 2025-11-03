@@ -1,0 +1,127 @@
+body{
+    display:flex;
+    background-color: black;
+    font-size: 62.5%;
+}
+
+.taskbar{
+    position:absolute;
+    background-color: white;
+    height: 7vh;
+    width:100%;
+    top: 0;
+    left: 0;
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+    z-index: 7;
+}
+
+.tbfunction {
+    display: flex;
+    gap: 6.2vw;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%)
+}
+
+.tbfunction a {
+    position: relative;
+    color: gray;
+    text-decoration: none;
+    padding: 0 0.26vw;
+    margin: 0 0.26vw;
+    font-size: 3vh;
+    font-family: "Rubik", sans-serif;
+    font-weight: 500;
+    transition: color 0.3s;
+    cursor: pointer;
+}
+
+.tbfunction a:hover {
+    color: black;
+}
+
+.tbfunction a::after {
+    content: '';
+    position: absolute;
+    bottom: -0.54vh;
+    left: 50%;
+    width: 0;
+    height: 0.219vh;
+    background-color: gray;
+    transition: width 0.3s;
+    transform: translateX(-50%);
+}
+
+.tbfunction a:hover::after {
+    width: 100%; 
+}
+
+
+.tbavt{
+    position:absolute;
+    width: 5vh;
+    height: 5vh;
+    right: 0.43vw;
+    top: 50%;
+    transform: translateY(-50%)
+}
+
+.tbavt img{
+    height: 100%;
+    width: 100%;
+    object-fit:cover;
+    border-radius: 50%;
+}
+
+
+.main {
+    top: 10vh;
+    position: relative;
+    width: 97vw;
+    margin-top: 3vh;
+    display: flex;
+    flex-direction: column;
+    gap: 10vh;
+    
+}
+
+
+.section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: 0;
+    box-sizing: border-box;
+}
+.context{
+    color: white;
+    font-size: 5vh;
+    width: 70%;
+    font-family: "Rubik", sans-serif;
+    font-weight: 300;
+}
+
+.Kanaria, .Bear, .Deco27 {
+    font-family: "Bad Script", cursive;
+    font-weight: 400;
+    font-style: normal;
+    color: rgb(255, 255, 255);
+    margin-bottom: 2vh;
+}
+
+.video, .video1, .video2 {
+    display: flex;
+    width: 90%; 
+    gap: 2vw; 
+    
+
+}
+
+.main iframe {
+    height: 34.5vh;
+    width: 29.1vw;
+}
