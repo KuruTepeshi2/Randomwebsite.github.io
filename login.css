@@ -20,7 +20,7 @@ body {
 }
 
 .boxheader{
-    font-size: 20px;
+    font-size: 22px;
     text-align: center;
     margin-bottom: 20px;
 }
@@ -81,7 +81,7 @@ body {
     color: black;
     text-decoration: none;
     margin: 5px;
-    font-size: 14px;
+    font-size: 20px;
     font-family: "Overpass", sans-serif;
     font-optical-sizing: auto;
 }
