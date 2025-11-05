@@ -12,17 +12,21 @@ body {
 }
 
 .box{
-    background-color: white;
+    background: rgba(255, 255, 255, 0.05);
     height: 60vh;
     width: 40vh;
     padding: 20px;
     border-radius: 20px;
+    box-shadow: 0 0 25px rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(10px);
+    color: #e6e6f0;
 }
 
 .boxheader{
     font-size: 22px;
     text-align: center;
     margin-bottom: 20px;
+    color: #b5aaff;
 }
 
 .loginform {
@@ -34,6 +38,7 @@ body {
     height: 20vh;
     border-radius: 100%;
     margin-bottom: 2vh;
+    border: 2px solid #7b6cff;
 }
 
 .loginform input {
@@ -41,13 +46,17 @@ body {
   width: 30vh;
   padding: 12px;
   margin: 7px 0;
-  border: 2px solid black;
+  border: 1px solid #7b6cff;
+  background: rgba(255, 255, 255, 0.08);
   border-radius: 10px;
   transition: 0.3s;
-
   font-size: 18px;
   font-family: "Overpass", sans-serif;
   font-optical-sizing: auto;
+}
+
+.loginform input::placeholder {
+    color: #b5aaff;
 }
 
 .loginform form{
@@ -56,13 +65,19 @@ body {
     align-items: center; 
 }
 
+.loginform input:focus {
+    border-color: #9a8cff;
+    box-shadow: 0 0 8px rgba(155, 140, 255, 0.4);
+}
+
 
 .loginform button{
     width: 13vh; 
     padding: 8px 8px;
     margin-top: 14px;
     border-radius: 10px;
-    background-color: black;
+    background-color: #7b6cff;
+    border: none;
     color: white;
     font-size: 16px;
     cursor: pointer;
@@ -71,14 +86,14 @@ body {
 }
 
 .loginform button:hover{
-    color: black;
-    background-color: white;
-    border: 2px solid black;
+    color: white;
+    background-color: #9a8cff;
+    box-shadow: 0 0 10px rgba(155, 140, 255, 0.4);
     opacity: 0.9;
 }
 
 .loginform a{
-    color: black;
+    color: #b5aaff;
     text-decoration: none;
     margin: 5px;
     font-size: 20px;
@@ -92,11 +107,12 @@ body {
   text-decoration: none;
 }
 
-.register a{
+.register a {
     font-family: "Overpass", sans-serif;
     font-optical-sizing: auto;
-    color: black;
+    color: #b5aaff;
     text-decoration: none;
+    transition: 0.3s;
 }
 
 .register a:hover{
