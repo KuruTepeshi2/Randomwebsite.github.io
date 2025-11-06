@@ -15,15 +15,15 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $user = $_POST['username'];
     $pass = $_POST['password'];
 
-    // Kiểm tra user trong database
+    
     $sql = "SELECT * FROM users WHERE username='$user' AND password='$pass'";
     $result = $conn->query($sql);
 
     if ($result && $result->num_rows > 0) {
-        $row = $result->fetch_assoc(); // Lấy dòng dữ liệu của user
-        $_SESSION['user'] = $row['username']; // Lưu session
+        $row = $result->fetch_assoc(); 
+        $_SESSION['user'] = $row['username']; 
 
-        // Nếu username là Admin thì qua admin.php
+        
         if ($row['username'] === "Admin") {
             header("Location: admin.php");
         } else {

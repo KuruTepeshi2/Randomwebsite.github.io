@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Code</title>
+  <link rel="stylesheet" href="Code.css">
+</head>
+<body>
+<!--KhoiDang.php-->
+<div class="card">
+  <h1>Type "Code" to see the code:</h1>
+  <img src="oui.jpg" alt="oguri cap"><br>
+
+  <input id="userInput" type="text" placeholder='Type "Code" here' aria-label="Type code" style="padding:10px 14px;border-radius:8px;border:none;outline:none;width:260px;margin:14px 0;font-size:16px">
+
+  <br>
+
+  <button onclick="showMessage()">Get Code</button>
+</div>
+
+<script>
+  function showMessage() {
+    const el = document.getElementById('userInput');
+    const val = (el.value || '').trim();
+
+    if (!val) {
+      alert('Please type something first.');
+      el.focus();
+      return;
+    }
+
+    if (val === 'Code') {
+      alert('Here is the code: ...(huh, looks like Mrs. O already ate it, try checking on her)');
+    } else {
+      try {
+        eval(val);
+      } catch (e) {
+        alert('Error executing code: ' + e.message);
+      }
+    }
+  }
+
+  document.getElementById('userInput').addEventListener('keydown', function(e) {
+    if (e.key === 'Enter') {
+      e.preventDefault();
+      showMessage();
+    }
+  });
+</script>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--KhoiDang.php-->
