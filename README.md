@@ -1,4 +1,4 @@
-# Random CTF website, i dont know why a make this...
+# Random CTF website, i dont know why i make this...
 
 As you can see, this is a random CTF challenge. Is has 3 rounds and it kinda easy for anyone who study Cybersecurity. 
 
@@ -20,6 +20,23 @@ And bellow is the writeup :3
 - Decode it and you will have this text:
 
 <img width="981" height="683" alt="image" src="https://github.com/user-attachments/assets/b5ed92f9-0353-42fe-8292-36542891285e" />
+
+## Second round
+
+- Go to that:
+<img width="1386" height="843" alt="image" src="https://github.com/user-attachments/assets/45ad42fd-70be-4ab6-a71a-e60cd4f7059e" />
+
+- You can see this login form
+- When you creat an account and login, it you lead u to this site, nothing sus here, but dont forget to say hi to my Doto >:(
+
+<img width="1556" height="897" alt="image" src="https://github.com/user-attachments/assets/bce58f2e-f6c7-4137-94fa-7f8c14daaa82" />
+
+- Return to the login form, u can see that login forms ussully involve SQL. Mention SQL and it's about SQL Injection. Enter the string "' OR 1=1-- -" and it will redirected you to the secret site:
+
+<img width="1864" height="917" alt="image" src="https://github.com/user-attachments/assets/a63e561c-e4e9-4b7e-bad6-387fa9d4d54a" />
+
+
+
 
 
 
