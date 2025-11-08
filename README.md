@@ -10,6 +10,17 @@ And bellow is the writeup :3
 
 ## First round
 
+- When you click the link, it will take you to this page
+<img width="1862" height="993" alt="image" src="https://github.com/user-attachments/assets/7424bc66-7f8f-4b7d-b5bb-1770e6f11487" />
+
+- When u checking the source code, you can see this class have a sus name, and right net to it is the cmt "==", so you can easily know that this is a Base64 code:
+
+<img width="439" height="69" alt="image" src="https://github.com/user-attachments/assets/101b295f-7451-4843-a74d-a06326e6000d" />
+
+- Decode it and you will have this text:
+
+<img width="981" height="683" alt="image" src="https://github.com/user-attachments/assets/b5ed92f9-0353-42fe-8292-36542891285e" />
+
 
 
 
