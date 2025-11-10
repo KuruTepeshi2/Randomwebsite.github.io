@@ -35,6 +35,19 @@ And bellow is the writeup :3
 
 <img width="1864" height="917" alt="image" src="https://github.com/user-attachments/assets/a63e561c-e4e9-4b7e-bad6-387fa9d4d54a" />
 
+## Last Round 
+
+- Làm theo chỉ dẫn của trang admin, khi đến bước nhập code thì bạn nhận ra code đã bị ộ u i ăn mất:
+
+<img width="1880" height="1005" alt="image" src="https://github.com/user-attachments/assets/ffd59b89-4074-4484-93ab-7f85b752a821" />
+
+- Thử nhập một câu lệnh để kiểm tra xem nó có bị XSS không:
+
+<img width="1866" height="992" alt="image" src="https://github.com/user-attachments/assets/81564aa4-ff58-4505-b0ac-b65b4fb8a7ed" />
+
+- Vậy là đá xác nhận nó bị XSS, giờ lướt xem phần source code:
+
+
 
 
 
