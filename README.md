@@ -45,27 +45,15 @@ And bellow is the writeup :3
 
 <img width="1866" height="992" alt="image" src="https://github.com/user-attachments/assets/81564aa4-ff58-4505-b0ac-b65b4fb8a7ed" />
 
-- Vậy là đá xác nhận nó bị XSS, giờ lướt xem phần source code:
+- Vậy là đã xác nhận nó bị XSS, giờ lướt xem phần source code thì thấy nó có một file tên "KhoiDang.php":
+
+<img width="238" height="98" alt="image" src="https://github.com/user-attachments/assets/6075d12a-ad20-4498-ac04-2a791918ac64" />
+
+- Giờ thử dùng câu lệnh để chạy file php đó:
+window.location.href = "khoidang.php";
+
+<img width="1865" height="245" alt="image" src="https://github.com/user-attachments/assets/d8ed5ce7-f60c-4c6c-ac02-628c43ccf2d0" />
+
+FLAG=KMA{M4nH4tt4n_C4f3_2025!}
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<script>
-function showMessage() {
-    
-    window.location.href = "khoidang.php";
-}
-</script>
