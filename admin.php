@@ -9,7 +9,7 @@ if (!isset($_SESSION['user']) || $_SESSION['user'] !== 'Admin') {
 }
 ?>
 <!DOCTYPE html>
-<html lang="en">
+<html lang="vi">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -27,7 +27,7 @@ if (!isset($_SESSION['user']) || $_SESSION['user'] !== 'Admin') {
 <body>
     <div class="taskbar">
         <div class="tbfunction">
-            <a href="#Me">Nothing here</a>
+            <a href="#Me">About Me</a>
             <a href="https://www.youtube.com/watch?v=sxcAXamuyR4">Money</a>
             <a href="H0wT0RUn_PHP1N_H7ML.html">Code</a>
             <a href="Music.html">Music</a>
@@ -48,15 +48,37 @@ if (!isset($_SESSION['user']) || $_SESSION['user'] !== 'Admin') {
             
                 btw you can click the "Money" tag to claim the money faster!
             </p>
-            <script>
-                function showMessage() {
-              alert("Here is the code: ...(huh,l ooks like Mrs. K already ate it, try checking on her)");
-               }
-             </script>
-            <form action="logout.php" method="POST">
-                <button type="submit" class="logout-btn">luoi code nut logout qua</button>
-            </form>
         </div>
+        <div class="classinput">
+            <p>Enter the code that you find in the box below to check it :3</p>
+            <input id="codeInput" type="text" placeholder="Code check">
+            <button onclick="checkCode()">Check</button>
+        </div>
+        <!-- i use chatGPT for this -->
+        <script>
+
+async function sha256(text) {
+    const encoder = new TextEncoder();
+    const data = encoder.encode(text);
+    const hashBuffer = await crypto.subtle.digest("SHA-256", data);
+    const hashArray = Array.from(new Uint8Array(hashBuffer));
+    const hashHex = hashArray.map(b => b.toString(16).padStart(2, "0")).join("");
+    return hashHex;
+}
+
+async function checkCode() {
+    const input = document.getElementById("codeInput").value.trim();
+    const targetHash = "11ed86e9643c916030f6dbcdc4f221a614e1ac776c6db8dd6772fda713c44045";
+
+    const result = await sha256(input);
+
+    if (result === targetHash) {
+        alert("U got me nigga!");
+    } else {
+        alert("Try again bro");
+    }
+}
+</script>
     </div>
 </body>
 </html>
