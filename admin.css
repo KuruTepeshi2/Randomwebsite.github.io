@@ -124,3 +124,15 @@ body{
     font-weight: 300;
     -style: normal;
 }
+.classinput{
+    position: absolute;
+    align-content: start;
+    top: 75%;
+    transform: translateY(-50%);
+    left: 27%;
+}
+.classinput p{
+    font-family: "Nunito Sans", sans-serif;
+    font-size: 20px;
+    color: white;
+}
