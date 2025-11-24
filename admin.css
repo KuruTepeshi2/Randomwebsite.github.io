@@ -103,7 +103,7 @@ body{
     color: white;
     position: absolute;
     align-content: start;
-    top: 50%;
+    top: 40%;
     transform: translateY(-59%);
     left: 27%;
 }
@@ -123,6 +123,7 @@ body{
     font-optical-sizing: auto;
     font-weight: 300;
     -style: normal;
+    font-size: 35px;
 }
 .classinput{
     position: absolute;
@@ -133,6 +134,40 @@ body{
 }
 .classinput p{
     font-family: "Nunito Sans", sans-serif;
-    font-size: 20px;
+    font-size: 25px;
     color: white;
+}
+
+.classinput input{
+    width: 35vh;
+    padding: 10px;
+    margin-top: 5px;
+    background: rgba(255, 255, 255, 0.08);
+    border: 1px solid #ffffff;
+    color: #e6e6f0;
+    border-radius: 10px;
+    transition: 0.3s;
+    font-size: 16px;
+    font-family: "Overpass", sans-serif;
+    font-optical-sizing: auto;
+}
+
+.classinput button{
+    width: 10vh;
+    padding: 10px 10px;
+    margin-top: 14px;
+    margin-left: 10px;
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.08);
+    border: 1px solid #ffffff;
+    color: #e6e6f0;
+    font-size: 16px;
+    cursor: pointer;
+    font-family: "Overpass", sans-serif;
+    font-optical-sizing: auto;
+}
+
+.classinput button:hover{
+    background-color: #9a8cff;
+    box-shadow: 0 0 10px rgba(155, 140, 255, 0.4);
 }
